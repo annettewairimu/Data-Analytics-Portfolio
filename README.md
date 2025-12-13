@@ -6,10 +6,13 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 
 - **Reasoning Through Data**  
   Demonstrates how I frame questions, assess data structure, reason, and think analytically before using tools.
-  - [Reasoning Through Data](01_reasoning-through-data/)
+
+  link 👉 [Reasoning Through Data](01_reasoning-through-data/)
 
 - **Excel Analysis Project**  
   Shows my ability to clean, summarize insights, and build clear dashboards using Excel.
+
+  link 👉 [Excel Analysis](02_excel-analysis/)
 
 - **SQL + Power BI Project**  
   Demonstrates an end-to-end analytics workflow, from data extraction using SQL to visualization in Power BI.
