@@ -17,6 +17,8 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 - **SQL + Power BI Project**  
   Demonstrates an end-to-end analytics workflow, from data extraction using SQL to visualization in Power BI.
 
+  link 👉 [SQL + Power BI Analysis](03_sql-powerbi-analysis/)
+
 ## Tools
 Excel • SQL • Power BI
 
