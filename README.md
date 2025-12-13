@@ -6,6 +6,7 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 
 - **Reasoning Through Data**  
   Demonstrates how I frame questions, assess data structure, reason, and think analytically before using tools.
+  - [Reasoning Through Data](01_reasoning-through-data/)
 
 - **Excel Analysis Project**  
   Shows my ability to clean, summarize insights, and build clear dashboards using Excel.
