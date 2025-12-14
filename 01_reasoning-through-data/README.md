@@ -82,6 +82,8 @@ Competition: High-paying, skill-heavy jobs attract more bids, indicating competi
 1. Prices increase with the number of bedrooms for both rent and sale.
 Rent grows steadily, while sale prices increase disproportionately for larger units, indicating that additional bedrooms add more value to ownership than rental income.
 
+3. Kitisuru offers the strongest rental yields for 1–3 bedroom units, making it ideal for landlords. Kilimani has the highest capital values, with attractive rental income for studios and 5-bedroom units, making it suitable for investors seeking both appreciation and rent. Hurlingham and Kileleshwa perform well for larger units (4–5 bedrooms). Some estates, such as Lavington for studios or Kileleshwa for 5-bedroom units, show zero or identical values for average, min, and max prices, indicating limited listings, possibly only one property. Lavington commands high sale prices but has limited rental opportunities for smaller units.
+
 
 
 ## Tools Used
