@@ -29,7 +29,7 @@ Are high-paying, skill-heavy jobs more competitive?
 
 ### Housing Listings
 
-How does housing price vary by number of bedrooms (sale and rent)?
+How does price change as the number of bedrooms increases?
 
 How do prices compare across estates for similar house types?
 
@@ -37,7 +37,7 @@ Do additional features increase housing prices?
 
 Which bedroom configurations are most commonly available?
 
-Which estates or features offer better value-for-money?
+Which realtor offers better value-for-money in each Estate?
 
 ## Analyses Performed
 
@@ -72,12 +72,10 @@ Experience	Expert-level roles demand broader skill sets, commanding higher budge
 Competition: High-paying, skill-heavy jobs attract more bids, indicating competition.
 ### Housing Listings
 #### Insight	Description
-Bedroom availability: One- and two-bedroom units dominate the rental market.
-Price trends: Prices increase with bedroom count, but growth varies across estates.
-Feature premium	Properties with more features tend to have higher prices.
-Value-for-money	Certain estates offer a good balance of price, bedrooms, and features.
+1. Prices increase with the number of bedrooms for both rent and sale.
+Rent grows steadily, while sale prices increase disproportionately for larger units, indicating that additional bedrooms add more value to ownership than rental income.
 
-These insights demonstrate reasoning with data rather than reporting raw numbers.
+
 
 ## Tools Used
 
