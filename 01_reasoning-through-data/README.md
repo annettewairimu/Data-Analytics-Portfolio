@@ -35,7 +35,7 @@ How do prices compare across estates for similar house types?
 
 Do additional features increase housing prices?
 
-Which bedroom configurations are most commonly available?
+What are the most commonly available bedroom configurations (studio, 1, 2,3...)?
 
 Which realtor offers better value-for-money in each Estate?
 
@@ -62,6 +62,12 @@ Bedrooms vs price
 Features vs price
 
 Excel was used for data cleaning, transformation, and pivot-based analysis only.
+
+#### House Listing Analyses
+
+Created features for analysis (Count of Features in each Listing).
+
+Started exploring price trends with respect to bedrooms.
 
 ## Key Insights
 ### Freelance Jobs
