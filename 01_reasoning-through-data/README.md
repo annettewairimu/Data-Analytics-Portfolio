@@ -65,13 +65,13 @@ Excel was used for data cleaning, transformation, and pivot-based analysis only.
 
 ## Key Insights
 ### Freelance Jobs
-Insight	Description
+#### Insight	Description
 Skill demand: Excel, SQL, and Power BI are the most frequently requested skills.
 Skill breadth	Jobs requiring multiple analytical tools tend to offer higher pay.
 Experience	Expert-level roles demand broader skill sets, commanding higher budgets.
 Competition: High-paying, skill-heavy jobs attract more bids, indicating competition.
 ### Housing Listings
-Insight	Description
+#### Insight	Description
 Bedroom availability: One- and two-bedroom units dominate the rental market.
 Price trends: Prices increase with bedroom count, but growth varies across estates.
 Feature premium	Properties with more features tend to have higher prices.
