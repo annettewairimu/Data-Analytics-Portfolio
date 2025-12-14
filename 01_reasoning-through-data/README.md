@@ -9,10 +9,10 @@ The emphasis is on analytical thinking, reasoning, pattern recognition, and acti
 ## Datasets
 Dataset	Observations	Key Columns	Focus
 (I collected these datasets myself from job listings and house listing platforms)
-### - Freelance Jobs	101 listings	
+###  Freelance Jobs	101 listings	
 Location, Experience, Project Type, Required Skills, Platform, Job Title, Bids, Clients' Stated Budget, Avg Bid Amount, Currency, Bid Type (hourly/fixed)
 
-### - Housing Listings 282 listings 
+###  Housing Listings 282 listings 
 Estate, Bedrooms, Bathrooms, Price, Kind/Features, Rent/Sale
 
 Both datasets required cleaning, transformation, and derived metrics before analysis.
