@@ -1,24 +1,36 @@
-# Project 1: Reasoning with Data. Freelance Jobs & Housing Market Analysis
-## Project Overview
+Project 1: Reasoning with Data
 
-This project demonstrates reasoning with real-world, semi-structured datasets using Microsoft Excel.
-It analyzes freelance job listings and housing listings, focusing on skill demand, pay patterns, property pricing, and market trends.
+Freelance Jobs & Housing Market Analysis
 
-The emphasis is on analytical thinking, reasoning, pattern recognition, and actionable insights.
+Project Overview
 
-## Datasets
-Dataset	Observations	Key Columns	Focus
-(I collected these datasets myself from job listings and house listing platforms)
-###  Freelance Jobs	101 listings	
-Location, Experience, Project Type, Required Skills, Platform, Job Title, Bids, Clients' Stated Budget, Avg Bid Amount, Currency, Bid Type (hourly/fixed)
+This project demonstrates analytical reasoning using real-world, semi-structured datasets analyzed in Microsoft Excel.
+It examines freelance job listings and housing listings, focusing on skill demand, pay patterns, property pricing, and market trends.
 
-###  Housing Listings 282 listings 
-Estate, Bedrooms, Bathrooms, Price, Kind/Features, Rent/Sale
+The emphasis is on analytical thinking, pattern recognition, and deriving actionable insights from data.
 
-Both datasets required cleaning, transformation, and derived metrics before analysis.
+Datasets
 
-## Analytical Questions
-### Freelance Jobs
+Both datasets were self-collected from online job listing and housing platforms.
+
+Freelance Jobs Dataset
+
+101 listings
+
+Key columns:
+Location, Experience Level, Project Type, Required Skills, Platform, Job Title, Number of Bids, Client Stated Budget, Average Bid Amount, Currency, Bid Type (Hourly / Fixed)
+
+Housing Listings Dataset
+
+282 listings
+
+Key columns:
+Estate, Bedrooms, Bathrooms, Price, Features, Listing Type (Rent / Sale)
+
+Both datasets required data cleaning, transformation, and the creation of derived metrics before analysis.
+
+Analytical Questions
+Freelance Jobs
 
 Which skills are most frequently requested in freelance data analyst roles?
 
@@ -28,29 +40,30 @@ How does experience level influence skill requirements and budgets?
 
 Are high-paying, skill-heavy jobs more competitive?
 
-### Housing Listings
+Housing Listings
 
-a) How does price change as the number of bedrooms increases?
+How does price change as the number of bedrooms increases?
 
-b) How do prices compare across estates for similar house types?
+How do prices compare across estates for similar house types?
 
-c) Do additional features increase housing prices?
+Do additional features increase housing prices?
 
-d) What are the most commonly available bedroom configurations (studio, 1, 2,3...)?
+What bedroom configurations (studio, 1, 2, 3, etc.) are most commonly available?
 
-## Analyses Performed
+Analyses Performed
+Freelance Jobs
 
-Standardized numeric fields (budgets, prices)
+Standardized numeric fields (budgets, bid amounts)
 
-Parsed semi-structured text fields into analyzable categories (skills, features)
+Parsed semi-structured text fields into analyzable categories (skills)
 
 Created derived metrics:
 
-Skill count and skill category flags (Excel, SQL, Power BI, BI tools, Programming)
+Skill count per listing
 
+Skill category flags (Excel, SQL, Power BI, BI tools, Programming)
 
-
-Pivot tables and summary statistics for trend analysis:
+Used pivot tables and summary statistics to analyze:
 
 Skills vs average pay
 
@@ -58,45 +71,144 @@ Skill count vs competition
 
 Excel was used for data cleaning, transformation, and pivot-based analysis only.
 
-#### House Listing Analyses
+Housing Listings
 
-Created features for analysis (Count of Features in each Listing).
+Created derived features for analysis (feature count per listing)
+
+Analyzed:
 
 Bedrooms vs price
 
 Features vs price
 
-Feature count and price-per-bedroom
+Feature count vs price-per-bedroom
 
-Listing Counts
+Listing counts by category
 
-## Key Insights
-### Freelance Jobs
-#### Insight	Description
-Skill demand: Excel, SQL, and Power BI are the most frequently requested skills.
-Skill breadth	Jobs requiring multiple analytical tools tend to offer higher pay.
-Experience	Expert-level roles demand broader skill sets, commanding higher budgets.
-Competition: High-paying, skill-heavy jobs attract more bids, indicating competition.
-### Housing Listings
-#### Insight	Description
-1. Prices increase with the number of bedrooms for both rent and sale.
-Rent grows steadily, while sale prices increase disproportionately for larger units, indicating that additional bedrooms add more value to ownership than rental income.
+Key Insights
+Freelance Jobs
+1. Excel Skills
 
-2. Kitisuru offers the strongest rental yields for 1–3 bedroom units, making it ideal for landlords. Kilimani has the highest capital values, with attractive rental income for studios and 5-bedroom units, making it suitable for those seeking both appreciation and rent. Hurlingham and Kileleshwa perform well for larger units (4–5 bedrooms). Some estates, such as Lavington for studios or Kileleshwa for 5-bedroom units, display zero or identical values for average, min, and max prices, indicating limited listings, possibly only one property. Lavington commands high sale prices but has limited rental opportunities for smaller units.
-  
-3. Housing prices generally rise with the number of features. Larger units (3–5 bedrooms) show a clear increase in median rent and sale prices as features are added, indicating that additional amenities significantly add value. Smaller units such as studios and 1-bedroom apartments show less consistent trends, largely due to limited listings with multiple features. Overall, the data suggests that both house size and feature count influence pricing, but the effect of features is more pronounced for larger houses.
+Overall requirement: 36 out of 41 listings require Excel → 87.8%
 
-4. The most commonly available bedroom configurations vary slightly by estate but generally show a strong concentration in 2- and 3-bedroom units. Studios and 5-bedroom houses are rare across all areas, while 1-bedroom units are consistently present but less dominant. For example, Kitisuru listings are dominated by 2-bedroom units (57%), whereas Hurlingham, Lavington, and Kileleshwa have more 3-bedroom units (35–42%). This distribution indicates that mid-sized units are the primary focus of the market, with smaller and larger units being less common.
+By experience level:
 
+Entry level: 4 / 6 → 66.7%
 
-## Tools Used
+Intermediate: 24 / 27 → 88.9%
 
-Microsoft Excel:
+Expert: 8 / 8 → 100%
 
-Data cleaning & standardization
+Insight:
+Excel is almost universally required across roles, and proficiency becomes increasingly mandatory at higher experience levels.
 
-Text parsing & categorization
+2. Data Visualization / BI Tool Skills
 
-Pivot tables for trend and comparative analysis
+Overall requirement: 31 / 41 → 75.6%
 
-Summary statistics & mini charts
+By experience level:
+
+Entry level: 2 / 6 → 33.3%
+
+Intermediate: 22 / 27 → 81.5%
+
+Expert: 7 / 8 → 87.5%
+
+Insight:
+Visualization and BI skills are emphasized at intermediate and expert levels. Entry-level roles tend to focus more on Excel or basic reporting.
+
+3. Programming Knowledge
+
+Entry-level roles: rarely required (2 listings)
+
+Intermediate roles: moderately required (7 listings)
+
+Expert roles: more frequently required (6 listings)
+
+Insight:
+Programming functions as a differentiating skill, especially at intermediate and expert levels. Many entry-level roles still rely primarily on Excel and visualization skills.
+
+4. Statistics / Data Analysis
+
+All intermediate and expert listings require statistics or data analysis knowledge.
+
+Insight:
+Core analytical skills are non-negotiable for non-entry roles and are consistently required across sectors.
+
+5. Database Knowledge
+
+Required only in intermediate and expert roles.
+
+Insight:
+Database skills become more important as analysts progress beyond entry-level, particularly for roles involving reporting and complex analysis.
+
+6. Domain Knowledge
+
+Required across intermediate and expert roles.
+
+Insight:
+Understanding the business domain is critical, even as technical requirements vary. Some entry-level roles may still require limited domain exposure depending on project type.
+
+7. Overall Skill Pattern
+
+Entry level: Excel-focused, limited visualization/BI, minimal programming
+
+Intermediate: Excel + visualization/BI + some programming + database + domain knowledge
+
+Expert: Excel + visualization + programming + statistics + domain knowledge, with greater problem-solving responsibility
+
+Housing Listings
+1. Bedrooms and Price
+
+Prices increase with the number of bedrooms for both rent and sale.
+Rent grows steadily, while sale prices increase more sharply for larger units, indicating that additional bedrooms add more value to ownership than to rental income.
+
+2. Estate-Level Price Patterns
+
+Kitisuru shows strong rental yields for 1–3 bedroom units.
+
+Kilimani has the highest capital values, with strong rental performance for studios and 5-bedroom units.
+
+Hurlingham and Kileleshwa perform well for larger units (4–5 bedrooms).
+
+Some estate–unit combinations show identical minimum, maximum, and average prices, indicating limited listings rather than stable pricing.
+
+Lavington commands high sale prices but has limited rental availability for smaller units.
+
+3. Features and Pricing
+
+Housing prices generally rise with the number of features.
+
+Larger units (3–5 bedrooms) show clear increases in median rent and sale prices as features are added.
+
+Smaller units (studios and 1-bedroom apartments) show less consistent trends due to limited listings with multiple features.
+
+Insight:
+Both house size and feature count influence pricing, with features having a stronger effect on larger houses.
+
+4. Bedroom Configuration Distribution
+
+Listings are concentrated in 2- and 3-bedroom units across estates.
+
+Studios and 5-bedroom houses are rare.
+
+One-bedroom units are consistently present but less dominant.
+
+Examples:
+
+Kitisuru: 2-bedroom units dominate (57%)
+
+Hurlingham, Lavington, Kileleshwa: 3-bedroom units dominate (35–42%)
+
+Insight:
+Mid-sized units form the core of the housing market, with smaller and larger units being less common.
+
+Tools Used
+
+Microsoft Excel
+
+Data cleaning and standardization
+
+Text parsing and categorization
+
+Excel Formulas.
