@@ -12,14 +12,13 @@ Housing market: property pricing trends, feature impact, and market patterns
 
 The goal: derive actionable insights from semi-structured data through cleaning, transformation, and analysis.
 
-Datasets
-Freelance Jobs
-
+**Datasets**
+**Freelance Jobs**
 Listings: 41
 
 Key columns: Experience Level, Project Type, Required Skills
 
-Housing Listings
+**Housing Listings**
 
 Listings: 282
 
@@ -75,6 +74,8 @@ Listing counts by category
 
 **Key Insights
 Freelance Jobs**
+
+
 <img width="580" height="411" alt="image" src="https://github.com/user-attachments/assets/c6cfd9c0-d1f2-4efe-8029-260e149ef7f4" />
 
 Overall Pattern:
@@ -85,9 +86,9 @@ Intermediate: Excel + Visualization/BI + some Programming + Database + Domain kn
 
 Expert: Excel + Visualization + Programming + Statistics + Domain knowledge
 
-Housing Listings
+**Housing Listings**
 
-Bedrooms & Price: Prices rise with number of bedrooms; ownership sees sharper price increases than rent.
+Bedrooms & Price: Prices rise with the number of bedrooms; ownership sees sharper price increases than rent.
 
 Estate Patterns:
 
@@ -105,11 +106,11 @@ Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-b
 
 Insight: Price and features strongly influence value; mid-sized units form the market core.
 
-Tools Used
+**Tools Used**
 
 Microsoft Excel: Data cleaning, transformation, text parsing, formulas, and analysis
 
-Key Takeaways
+**Key Takeaways**
 
 Excel proficiency is almost universal for freelance roles.
 
