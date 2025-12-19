@@ -1,8 +1,8 @@
-### Project 1: Reasoning with Data
+#### Project 1: Reasoning with Data
 
-**## Freelance Jobs & Housing Market Analysis**
+## Freelance Jobs & Housing Market Analysis
 
-**# Overview****
+# Overview****
 
 This project demonstrates analytical reasoning using real-world datasets in Microsoft Excel. It explores:
 
