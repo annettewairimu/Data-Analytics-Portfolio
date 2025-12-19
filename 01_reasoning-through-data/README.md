@@ -121,4 +121,3 @@ Intermediate/expert jobs require a mix of BI, programming, statistics, and domai
 
 Housing prices correlate with the number of bedrooms, features, and estate location.
 
-Data cleaning and derived metrics are critical for actionable insights.
