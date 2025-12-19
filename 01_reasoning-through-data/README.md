@@ -106,6 +106,7 @@ Features & Pricing: More features → higher price, especially for larger units
 Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-bedroom units are rare
 
 **Insight:**
+
 Price and features strongly influence value; mid-sized units form the market core.
 
 ## Tools Used
