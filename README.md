@@ -22,5 +22,5 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 ## Tools
 Excel • SQL • Power BI
 
-Each project includes a README explaining the business problem, approach, and key insights.
+Each project includes a README file that explains the business problem, approach, and key insights.
 
