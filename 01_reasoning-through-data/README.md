@@ -1,8 +1,8 @@
-**Project 1: Reasoning with Data
+****Project 1: Reasoning with Data**
 
-Freelance Jobs & Housing Market Analysis
+**Freelance Jobs & Housing Market Analysis**
 
-Overview**
+**Overview****
 
 This project demonstrates analytical reasoning using real-world datasets in Microsoft Excel. It explores:
 
@@ -27,20 +27,18 @@ Key columns: Estate, Bedrooms, Bathrooms, Price, Features, Listing Type (Rent/Sa
 
 Both datasets required cleaning, transformation, and creation of derived metrics before analysis.
 
-Analytical Questions
-Freelance Jobs
+**Analytical Questions
+Freelance Jobs**
 
 How is Excel demanded across experience levels?
-
-Which skill combinations attract higher pay?
 
 How does experience influence skill requirements?
 
 Are expert-level jobs more skill-heavy?
 
-Housing Listings
+**Housing Listings**
 
-How does price change with bedrooms?
+How does the price change with bedrooms?
 
 How do prices vary across estates for similar units?
 
@@ -48,10 +46,8 @@ Do additional features increase price?
 
 What bedroom configurations dominate the market?
 
-Analyses Performed
-Freelance Jobs
-
-Standardized numeric fields (budgets, bid amounts)
+**Analyses Performed
+Freelance Jobs**
 
 Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
 
@@ -63,7 +59,7 @@ Jobs requiring Excel by experience level
 
 Skill sets demanded at entry, intermediate, and expert levels
 
-Housing Listings
+**Housing Listings**
 
 Created derived features (feature counts)
 
@@ -77,15 +73,9 @@ Feature Count vs. Price per Bedroom
 
 Listing counts by category
 
-Key Insights
-Freelance Jobs
-Skill Category	Entry	Intermediate	Expert	Key Insight
-Excel	66.7%	88.9%	100%	Proficiency is critical, especially at higher levels
-Visualization/BI	33.3%	81.5%	87.5%	Intermediate+ roles prioritize visualization skills
-Programming	2 listings	7 listings	6 listings	Programming differentiates mid-to-senior roles
-Statistics/Data Analysis	Rare	All	All	Core analytical skills are non-negotiable
-Database	None	Some	Required	Database knowledge grows in importance with seniority
-Domain Knowledge	Limited	Required	Required	Business understanding is crucial for non-entry roles
+**Key Insights
+Freelance Jobs**
+<img width="580" height="411" alt="image" src="https://github.com/user-attachments/assets/c6cfd9c0-d1f2-4efe-8029-260e149ef7f4" />
 
 Overall Pattern:
 
