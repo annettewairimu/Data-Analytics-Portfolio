@@ -14,6 +14,7 @@ The goal: derive actionable insights from semi-structured data through cleaning,
 
 ### Datasets
 **Freelance Jobs**
+
 Listings: 41
 
 Key columns: Experience Level, Project Type, Required Skills
