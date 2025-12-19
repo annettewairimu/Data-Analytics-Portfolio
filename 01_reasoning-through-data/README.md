@@ -1,8 +1,8 @@
-### Project 1: Reasoning with Data
+**### Project 1: Reasoning with Data**
 
-**Freelance Jobs & Housing Market Analysis**
+**## Freelance Jobs & Housing Market Analysis**
 
-**Overview****
+**# Overview****
 
 This project demonstrates analytical reasoning using real-world datasets in Microsoft Excel. It explores:
 
@@ -12,7 +12,7 @@ Housing market: property pricing trends, feature impact, and market patterns
 
 The goal: derive actionable insights from semi-structured data through cleaning, transformation, and analysis.
 
-**Datasets**
+**# Datasets**
 **Freelance Jobs**
 Listings: 41
 
@@ -26,7 +26,7 @@ Key columns: Estate, Bedrooms, Bathrooms, Price, Features, Listing Type (Rent/Sa
 
 Both datasets required cleaning, transformation, and creation of derived metrics before analysis.
 
-**Analytical Questions
+**# Analytical Questions
 Freelance Jobs**
 
 How is Excel demanded across experience levels?
@@ -45,7 +45,7 @@ Do additional features increase price?
 
 What bedroom configurations dominate the market?
 
-**Analyses Performed
+**# Analyses Performed
 Freelance Jobs**
 
 Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
@@ -72,7 +72,7 @@ Feature Count vs. Price per Bedroom
 
 Listing counts by category
 
-**Key Insights
+**# Key Insights
 Freelance Jobs**
 
 
@@ -104,14 +104,14 @@ Features & Pricing: More features → higher price, especially for larger units
 
 Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-bedroom units are rare
 
-**Insight:**
+**# Insight:**
 Price and features strongly influence value; mid-sized units form the market core.
 
-**Tools Used**
+**## Tools Used**
 
 Microsoft Excel: Data cleaning, transformation, text parsing, formulas, and analysis
 
-**Key Takeaways**
+**## Key Takeaways**
 
 Excel proficiency is almost universal for freelance roles.
 
