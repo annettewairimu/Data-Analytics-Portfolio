@@ -115,10 +115,10 @@ Microsoft Excel: Data cleaning, transformation, text parsing, formulas, and anal
 
 ## Key Takeaways
 
-Excel proficiency is almost universal for freelance roles.
+Excel proficiency is almost universal for freelance roles at all experience levels.
 
 Intermediate/expert jobs require a mix of BI, programming, statistics, and domain knowledge.
 
-Housing prices correlate with bedrooms, features, and estate location.
+Housing prices correlate with the number of bedrooms, features, and estate location.
 
 Data cleaning and derived metrics are critical for actionable insights.
