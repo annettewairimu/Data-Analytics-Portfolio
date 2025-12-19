@@ -1,4 +1,4 @@
-****Project 1: Reasoning with Data**
+**Project 1: Reasoning with Data**
 
 **Freelance Jobs & Housing Market Analysis**
 
@@ -78,7 +78,7 @@ Freelance Jobs**
 
 <img width="580" height="411" alt="image" src="https://github.com/user-attachments/assets/c6cfd9c0-d1f2-4efe-8029-260e149ef7f4" />
 
-Overall Pattern:
+**Overall Insight:**
 
 Entry: Excel-focused, minimal visualization/programming/domain exposure
 
@@ -104,7 +104,8 @@ Features & Pricing: More features → higher price, especially for larger units
 
 Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-bedroom units are rare
 
-Insight: Price and features strongly influence value; mid-sized units form the market core.
+**Insight:**
+Price and features strongly influence value; mid-sized units form the market core.
 
 **Tools Used**
 
