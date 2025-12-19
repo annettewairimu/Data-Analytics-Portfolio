@@ -1,214 +1,130 @@
-Project 1: Reasoning with Data
+**Project 1: Reasoning with Data
 
 Freelance Jobs & Housing Market Analysis
 
-Project Overview
+Overview**
 
-This project demonstrates analytical reasoning using real-world, semi-structured datasets analyzed in Microsoft Excel.
-It examines freelance job listings and housing listings, focusing on skill demand, pay patterns, property pricing, and market trends.
+This project demonstrates analytical reasoning using real-world datasets in Microsoft Excel. It explores:
 
-The emphasis is on analytical thinking, pattern recognition, and deriving actionable insights from data.
+Freelance jobs: skill demand across experience levels
+
+Housing market: property pricing trends, feature impact, and market patterns
+
+The goal: derive actionable insights from semi-structured data through cleaning, transformation, and analysis.
 
 Datasets
+Freelance Jobs
 
-Both datasets were self-collected from online job listing and housing platforms.
+Listings: 41
 
-Freelance Jobs Dataset
+Key columns: Experience Level, Project Type, Required Skills
 
-101 listings
+Housing Listings
 
-Key columns:
-Location, Experience Level, Project Type, Required Skills, Platform, Job Title, Number of Bids, Client Stated Budget, Average Bid Amount, Currency, Bid Type (Hourly / Fixed)
+Listings: 282
 
-Housing Listings Dataset
+Key columns: Estate, Bedrooms, Bathrooms, Price, Features, Listing Type (Rent/Sale)
 
-282 listings
-
-Key columns:
-Estate, Bedrooms, Bathrooms, Price, Features, Listing Type (Rent / Sale)
-
-Both datasets required data cleaning, transformation, and the creation of derived metrics before analysis.
+Both datasets required cleaning, transformation, and creation of derived metrics before analysis.
 
 Analytical Questions
 Freelance Jobs
 
-Which skills are most frequently requested in freelance data analyst roles?
+How is Excel demanded across experience levels?
 
 Which skill combinations attract higher pay?
 
-How does experience level influence skill requirements and budgets?
+How does experience influence skill requirements?
 
-Are high-paying, skill-heavy jobs more competitive?
+Are expert-level jobs more skill-heavy?
 
 Housing Listings
 
-How does price change as the number of bedrooms increases?
+How does price change with bedrooms?
 
-How do prices compare across estates for similar house types?
+How do prices vary across estates for similar units?
 
-Do additional features increase housing prices?
+Do additional features increase price?
 
-What bedroom configurations (studio, 1, 2, 3, etc.) are most commonly available?
+What bedroom configurations dominate the market?
 
 Analyses Performed
 Freelance Jobs
 
 Standardized numeric fields (budgets, bid amounts)
 
-Parsed semi-structured text fields into analyzable categories (skills)
+Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
 
-Created derived metrics:
+Created derived metrics: skill counts, skill flags
 
-Skill count per listing
+Analysis examples:
 
-Skill category flags (Excel, SQL, Power BI, BI tools, Programming)
+Jobs requiring Excel by experience level
 
-Used pivot tables and summary statistics to analyze:
-
-Skills vs average pay
-
-Skill count vs competition
-
-Excel was used for data cleaning, transformation, and pivot-based analysis only.
+Skill sets demanded at entry, intermediate, and expert levels
 
 Housing Listings
 
-Created derived features for analysis (feature count per listing)
+Created derived features (feature counts)
 
 Analyzed:
 
-Bedrooms vs price
+Bedrooms vs. Price
 
-Features vs price
+Features vs. Price
 
-Feature count vs price-per-bedroom
+Feature Count vs. Price per Bedroom
 
 Listing counts by category
 
 Key Insights
 Freelance Jobs
-1. Excel Skills
+Skill Category	Entry	Intermediate	Expert	Key Insight
+Excel	66.7%	88.9%	100%	Proficiency is critical, especially at higher levels
+Visualization/BI	33.3%	81.5%	87.5%	Intermediate+ roles prioritize visualization skills
+Programming	2 listings	7 listings	6 listings	Programming differentiates mid-to-senior roles
+Statistics/Data Analysis	Rare	All	All	Core analytical skills are non-negotiable
+Database	None	Some	Required	Database knowledge grows in importance with seniority
+Domain Knowledge	Limited	Required	Required	Business understanding is crucial for non-entry roles
 
-Overall requirement: 36 out of 41 listings require Excel → 87.8%
+Overall Pattern:
 
-By experience level:
+Entry: Excel-focused, minimal visualization/programming/domain exposure
 
-Entry level: 4 / 6 → 66.7%
+Intermediate: Excel + Visualization/BI + some Programming + Database + Domain knowledge
 
-Intermediate: 24 / 27 → 88.9%
-
-Expert: 8 / 8 → 100%
-
-Insight:
-Excel is almost universally required across roles, and proficiency becomes increasingly mandatory at higher experience levels.
-
-2. Data Visualization / BI Tool Skills
-
-Overall requirement: 31 / 41 → 75.6%
-
-By experience level:
-
-Entry level: 2 / 6 → 33.3%
-
-Intermediate: 22 / 27 → 81.5%
-
-Expert: 7 / 8 → 87.5%
-
-Insight:
-Visualization and BI skills are emphasized at intermediate and expert levels. Entry-level roles tend to focus more on Excel or basic reporting.
-
-3. Programming Knowledge
-
-Entry-level roles: rarely required (2 listings)
-
-Intermediate roles: moderately required (7 listings)
-
-Expert roles: more frequently required (6 listings)
-
-Insight:
-Programming functions as a differentiating skill, especially at intermediate and expert levels. Many entry-level roles still rely primarily on Excel and visualization skills.
-
-4. Statistics / Data Analysis
-
-All intermediate and expert listings require statistics or data analysis knowledge.
-
-Insight:
-Core analytical skills are non-negotiable for non-entry roles and are consistently required across sectors.
-
-5. Database Knowledge
-
-Required only in intermediate and expert roles.
-
-Insight:
-Database skills become more important as analysts progress beyond entry-level, particularly for roles involving reporting and complex analysis.
-
-6. Domain Knowledge
-
-Required across intermediate and expert roles.
-
-Insight:
-Understanding the business domain is critical, even as technical requirements vary. Some entry-level roles may still require limited domain exposure depending on project type.
-
-7. Overall Skill Pattern
-
-Entry level: Excel-focused, limited visualization/BI, minimal programming
-
-Intermediate: Excel + visualization/BI + some programming + database + domain knowledge
-
-Expert: Excel + visualization + programming + statistics + domain knowledge, with greater problem-solving responsibility
+Expert: Excel + Visualization + Programming + Statistics + Domain knowledge
 
 Housing Listings
-1. Bedrooms and Price
 
-Prices increase with the number of bedrooms for both rent and sale.
-Rent grows steadily, while sale prices increase more sharply for larger units, indicating that additional bedrooms add more value to ownership than to rental income.
+Bedrooms & Price: Prices rise with number of bedrooms; ownership sees sharper price increases than rent.
 
-2. Estate-Level Price Patterns
+Estate Patterns:
 
-Kitisuru shows strong rental yields for 1–3 bedroom units.
+Kitisuru: strong rental yields for 1–3 bedrooms
 
-Kilimani has the highest capital values, with strong rental performance for studios and 5-bedroom units.
+Kilimani: highest capital values, strong rental for studios & 5-bedroom units
 
-Hurlingham and Kileleshwa perform well for larger units (4–5 bedrooms).
+Hurlingham/Kileleshwa: perform well for 4–5 bedrooms
 
-Some estate–unit combinations show identical minimum, maximum, and average prices, indicating limited listings rather than stable pricing.
+Lavington: high sale prices, limited small-unit rentals
 
-Lavington commands high sale prices but has limited rental availability for smaller units.
+Features & Pricing: More features → higher price, especially for larger units
 
-3. Features and Pricing
+Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-bedroom units are rare
 
-Housing prices generally rise with the number of features.
-
-Larger units (3–5 bedrooms) show clear increases in median rent and sale prices as features are added.
-
-Smaller units (studios and 1-bedroom apartments) show less consistent trends due to limited listings with multiple features.
-
-Insight:
-Both house size and feature count influence pricing, with features having a stronger effect on larger houses.
-
-4. Bedroom Configuration Distribution
-
-Listings are concentrated in 2- and 3-bedroom units across estates.
-
-Studios and 5-bedroom houses are rare.
-
-One-bedroom units are consistently present but less dominant.
-
-Examples:
-
-Kitisuru: 2-bedroom units dominate (57%)
-
-Hurlingham, Lavington, Kileleshwa: 3-bedroom units dominate (35–42%)
-
-Insight:
-Mid-sized units form the core of the housing market, with smaller and larger units being less common.
+Insight: Price and features strongly influence value; mid-sized units form the market core.
 
 Tools Used
 
-Microsoft Excel
+Microsoft Excel: Data cleaning, transformation, text parsing, formulas, and analysis
 
-Data cleaning and standardization
+Key Takeaways
 
-Text parsing and categorization
+Excel proficiency is almost universal for freelance roles.
 
-Excel Formulas.
+Intermediate/expert jobs require a mix of BI, programming, statistics, and domain knowledge.
+
+Housing prices correlate with bedrooms, features, and estate location.
+
+Data cleaning and derived metrics are critical for actionable insights.
