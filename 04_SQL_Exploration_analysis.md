@@ -65,11 +65,12 @@ This section focuses on how tickets move through the system and where time is sp
 - Average resolution time is ~178 hours (~7 days)
 
 **Insight:**
-The system responds to tickets quickly but takes significantly longer to resolve them.
-This suggests that the primary bottleneck is not acknowledgment, but execution after first response.
 
-Channel, priority, and status distributions show relatively even ticket intake across channels,
-Yet resolution time varies noticeably by channel–status and priority–status combinations.
+- The system responds to tickets quickly but takes significantly longer to resolve them.
+  This suggests that the primary holdup is not acknowledgment, but execution after the first response.
+
+- Channel, priority, and status distributions show relatively even ticket intake across channels,
+  Yet resolution time varies noticeably by channel–status and priority–status combinations.
 
 **Interpretation:**
 Priority labels (including “Urgent”) do not consistently translate into faster resolution, 
