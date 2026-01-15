@@ -1,1 +1,54 @@
 Agent Performance, Case & Ticket Management System – SQL Data Exploration and Analysis
+
+Project Overview
+This project explores and analyzes a case and ticket management system to understand how tickets are created, 
+updated, categorized, and resolved by exploring the tickets and analyzing patterns and how agent performance impacts resolution efficiency and customer satisfaction.
+Classify agents according to their performance and evaluate their contributions.
+
+The analysis focuses on operational insights derived from structured data using SQL, covering:
+- Statistical analysis to use as benchmark in ticket logs
+- Time period for an open ticket to open and close. min, avg, max days
+- Update activity and trends
+- Ticket categorization through tags
+- Agent workload, efficiency, and CSAT
+
+This project demonstrates my ability to explore data, ask the right questions, and translate SQL outputs into meaningful insights, 
+even without prior industry experience.
+
+Tools & Technologies
+- SQL (SQL Server–style syntax)
+- Aggregation functions (COUNT, SUM, AVG, MIN, MAX)
+- Group By, Order By
+- Conditional logic (CASE)
+- Subqueries & cross joins
+- Temporary tables for reusable analysis
+
+Dataset Description
+
+The analysis uses four related tables
+1. Case_Ticket_Management_TicketLogCSV
+ Column;
+  TicketID, CustomerID, AgentID, ProductId, Channel, Priority, Status, DateCreated, DateClosed, 
+  ResolutionTimeHours, FirstResponseTimeHours
+2. Case_Ticket_Management_TicketTagsCSV
+ Columns;
+  TaggingID, TicketID, Tag
+3. Case_Ticket_Management_Details_UpdateCSV
+ Columns;
+  DetailID, TicketID, UpdateTimeStamp, UpdateText
+4. Agent_Team_PerformanceCSV
+ Columns;
+  AgentID, AgentName, TicketClosed, Average_Resolution_Time_Hours, Average_CSAT_Score
+
+The data was in a clean state; no additional string cleaning or trimming was required.
+
+
+
+
+
+
+
+
+
+
+
