@@ -43,6 +43,22 @@ The analysis uses four related tables
 The data was in a clean state; no additional string cleaning or trimming was required.
 
 
+Analysis Breakdown
+1️⃣ Ticket Lifecycle & Operations
+
+SQL file: ticket_logs_analysis.sql
+
+This analysis explores how tickets move through the system and how efficiently they are handled.
+
+Key questions addressed:
+
+1. How many tickets are created?
+2. How Long does an Open Ticket take to Close, Min,Avg, Max
+3. How do response and resolution times vary?
+4. Which channels, priorities, and statuses dominate ticket volume?
+5. Are certain channels or priorities associated with slower resolution?
+
+
 
 
 
