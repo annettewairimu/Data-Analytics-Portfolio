@@ -1,118 +1,103 @@
-Case Ticket Management & Agent Performance.
+# Case Ticket Management & Agent Performance 
 
-SQL Data Exploration & Analysis
+### SQL Data Exploration & Analysis
 
-Project Overview
+## Project Overview
 
-This project explores a case and ticket management system to understand how tickets are created, updated, categorized, 
-and resolved, and how agent performance influences resolution efficiency and customer satisfaction.
+This project explores a **case and ticket management system** to understand how tickets are created, updated, categorized, and resolved,
+and how **agent performance influences resolution efficiency and customer satisfaction**.
 
-The goal of this analysis is not prediction or automation, but structured data exploration:
+The goal of this is **structured data exploration**:
 asking the right questions, establishing benchmarks, identifying patterns, and translating SQL outputs into operational insights.
 
 The project demonstrates my ability to:
 
-explore unfamiliar datasets independently
+1. Explore unfamiliar datasets independently
+2. Reason from raw SQL outputs
+3. Connect multiple tables
+4. move from observation to insight, even without prior industry experience
 
-reason from raw SQL outputs
+## Tools & Technologies
 
-connect multiple tables into a coherent system view
-
-move from observation to insight, even without prior industry experience
-
-Tools & Technologies
-
-SQL (SQL Server–style syntax)
-
-Aggregation functions: COUNT, SUM, AVG, MIN, MAX
-
-GROUP BY, ORDER BY
-
-Conditional logic using CASE
-
-Subqueries and CROSS JOIN for benchmarks
-
-Temporary tables for reusable analysis
-
-Logical joins (e.g., ProductID → ProductName)
+1. Aggregation functions: COUNT, SUM, AVG, MIN, MAX
+2. GROUP BY, ORDER BY
+3. Conditional logic using CASE
+4. Subqueries and CROSS JOIN for benchmarks
+5. Temporary tables for reusable analysis
+6. Logical joins (e.g., ProductID → ProductName)
+7. SQL (SQL Server–style syntax)
 
 The data was already in a clean state; no additional trimming or string cleaning was required.
 
-Dataset Description
+## Dataset Description
 
-This analysis uses four related tables:
+This exploration and analysis uses **four related tables**:
 
-1. Case_Ticket_Management_TicketLogCSV
-
-Core ticket lifecycle data
-Columns:
+## 1. Case_Ticket_Management_TicketLogCSV
+**Columns:**
 TicketID, CustomerID, AgentID, ProductID, Channel, Priority, Status, DateCreated, DateClosed, ResolutionTime_Hours, FirstResponseTime_Hours
 
-2. Case_Ticket_Management_TicketTagsCSV
-
-Ticket categorization and labeling
-Columns:
+## 2. Case_Ticket_Management_TicketTagsCSV
+**Columns:**
 TaggingID, TicketID, Tag
 
-3. Case_Ticket_Management_Details_UpdateCSV
-
-Ticket activity and updates over time
-Columns:
+## 3. Case_Ticket_Management_Details_UpdateCSV
+**Columns:**
 DetailID, TicketID, UpdateTimestamp, UpdateText
 
-4. Agent_Team_PerformanceCSV
-
-Aggregated agent performance metrics
-Columns:
+## 4. Agent_Team_PerformanceCSV
+**Columns:**
 AgentID, AgentName, TicketsClosed, AverageResolutionTimeHours, Average_CSAT_Score
 
-Analysis Breakdown
-1️⃣ Ticket Lifecycle & Operations
+## Analysis Breakdown
+## 1. Ticket Lifecycle & Operations
 
-SQL file: ticket_logs_analysis.sql
+**SQL file:** ticket_logs_analysis.sql
 
 This section focuses on how tickets move through the system and where time is spent.
 
-Key findings:
+**Key findings:**
 
-1,000 tickets were created, but only 201 were resolved
+- 1,000 tickets were created, but only 201 were resolved
 
-Average first response time is ~2 hours
+- Average first response time is ~2 hours
 
-Average resolution time is ~178 hours (~7 days)
+- Average resolution time is ~178 hours (~7 days)
 
-Insight:
+**Insight:**
 The system responds to tickets quickly but takes significantly longer to resolve them.
 This suggests that the primary bottleneck is not acknowledgment, but execution after first response.
 
-Channel, priority, and status distributions show relatively even ticket intake across channels, yet resolution time varies noticeably by channel–status and priority–status combinations.
+Channel, priority, and status distributions show relatively even ticket intake across channels,
+Yet resolution time varies noticeably by channel–status and priority–status combinations.
 
-Interpretation:
-Priority labels (including “Urgent”) do not consistently translate into faster resolution, indicating that urgency classification alone does not drive execution speed. This points to capacity or process constraints rather than prioritization logic.
+**Interpretation:**
+Priority labels (including “Urgent”) do not consistently translate into faster resolution, 
+indicating that urgency classification alone does not drive execution speed. This points to capacity or process constraints rather than prioritization logic.
 
-2️⃣ Ticket Updates & Activity Patterns
+## 2️. Ticket Updates & Activity Patterns
 
-SQL file: ticket_updates_analysis.sql
+**SQL file:** ticket_updates_analysis.sql
 
 This analysis examines how often tickets are updated and how update activity changes over time.
 
-Key findings:
+**Key findings:**
 
-1,000 ticket creation events
+- 1,000 ticket creation events
 
-405 agent responses
+- 405 agent responses
 
-201 resolution updates
+- 201 resolution updates
 
-Update activity remains relatively consistent across years (2022–2025)
+- Update activity remains relatively consistent across years (2022–2025)
 
-Insight:
+**Insight:**
 There is a clear drop-off between ticket creation, agent engagement, and final resolution.
 This suggests that many tickets enter the system but do not complete the full lifecycle efficiently.
 
 The consistency across years indicates this is a structural pattern, not a one-time fluctuation.
 
-3️⃣ Ticket Tag Usage & Coverage
+## 3️. Ticket Tag Usage & Coverage
 
 SQL file: ticket_tags_analysis.sql
 
@@ -200,6 +185,3 @@ and reason carefully from what the data actually shows
 Rather than treating tables independently, I analyzed them as parts of a single operational system.
 
 The work demonstrates readiness for a junior analyst role, with a strong foundation for mentorship and growth into deeper analytical and business-focused problem solving.
-
-
-
