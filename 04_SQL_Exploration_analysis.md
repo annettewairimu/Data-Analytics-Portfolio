@@ -22,7 +22,7 @@ The project demonstrates my ability to:
 1. Aggregation functions: COUNT, SUM, AVG, MIN, MAX
 2. GROUP BY, ORDER BY
 3. Conditional logic using CASE
-4. Subqueries and CROSS JOIN for benchmarks
+4. Subqueries and CROSS JOIN for benchmarks (SELECT INTO Logic)
 5. Temporary tables for reusable analysis
 6. Logical joins (e.g., ProductID → ProductName)
 7. SQL (SQL Server–style syntax)
@@ -50,139 +50,142 @@ DetailID, TicketID, UpdateTimestamp, UpdateText
 AgentID, AgentName, TicketsClosed, AverageResolutionTimeHours, Average_CSAT_Score
 
 ## Analysis Breakdown
-## 1. Ticket Lifecycle & Operations
+
+## 1. Ticket Lifecycle & Operations (Ticketlogs)
 
 **SQL file:** ticket_logs_analysis.sql
 
-This section focuses on how tickets move through the system and where time is spent.
+**My Thinking:**
 
-**Key findings:**
+I started by exploring the ticket log to understand the overall system behavior. Before slicing by channel, priority, or product, I wanted to know:
 
-- 1,000 tickets were created, but only 201 were resolved
+- What are my columns, and what is in them
+- How long do tickets take to resolve
+- How ticket lifecycles look in practical terms (days open)
 
-- Average first response time is ~2 hours
+This baseline guided the rest of my analysis.
 
-- Average resolution time is ~178 hours (~7 days)
+**My Approach:**
 
-**Insight:**
+- Calculated total tickets, minimum, average, and maximum first response and resolution times.
+- Converted resolution times into ticket lifecycle duration (days) to validate operational impact.
+- Filtered to only Resolved and Closed tickets for meaningful resolution metrics.
+- Broke down by channel, then priority within channel, then priority independently.
+- Categorized resolution times into Fast / Average / Slow to see patterns beyond averages.
+- Added ProductID to understand if certain products generate more workload or take longer to resolve.
+  (To add the product name, I used **join** to the product master table)
+  
+**My Finding:**
 
-- The system responds to tickets quickly but takes significantly longer to resolve them.
-  This suggests that the primary holdup is not acknowledgment, but execution after the first response.
+- Total tickets analyzed: 1,000 (384 with resolution not null; 201 resolved)
+- Average first response time: 2 hours
+- Average resolution time: 178 hours (7 days)
+- Ticket lifecycle duration: min 0 days, max 14 days, avg 7 days
+- Channel patterns: Resolution time is similar across channels; Chat slightly faster (158 h), Email (176 h), Phone (177), WebForm (~210 h),
+  but differences aren’t meaningful on their own
+- Priority patterns: High/Urgent tickets exist in all channels; priority does not consistently shorten resolution time
+- Resolution distribution: Slow resolutions dominate across channels, priorities, and statuses
+- Product-level: Products have similar ticket counts and average resolution times, with differences between 1–8 hours
 
-- Channel, priority, and status distributions show relatively even ticket intake across channels,
-  Yet resolution time varies noticeably by channel–status and priority–status combinations.
+**Insights:**
+
+- The system responds to tickets quickly, but resolution is the main holdup — delays happen after initial acknowledgment
+- Resolution speed is influenced more by channel and product than by priority labels alone
+- Slow resolution is systemic, not isolated to specific channels, priorities, or products
 
 **Interpretation:**
-Priority labels (including “Urgent”) do not consistently translate into faster resolution, 
-indicating that urgency classification alone does not drive execution speed. This points to capacity or process constraints rather than prioritization logic.
 
-## 2️. Ticket Updates & Activity Patterns
+Priority labels, including “Urgent,” do not guarantee faster resolution. 
+This indicates capacity rather than flaws in prioritization logic
+
+## 2. Ticket Tag Usage & Coverage (TicketTags)
+
+**SQL file:** ticket_tags_analysis.sql
+
+**Purpose:**
+
+I explored ticket tags to understand how tickets are categorized and whether tagging adds insight. I checked overall tag usage and compared total tag counts to unique ticket counts to see if tickets have multiple tags applied.
+
+**Key Findings:**
+
+- All Tags are within the same range Counts.
+- Unique ticket counts per tag are slightly lower than total tag counts
+
+**Insights:**
+
+- Tags are often applied multiple times to the same tickets, indicating that tickets evolve rather than belong to a single category
+
+
+
+
+## 3. Ticket Update Activity & Behavior (TicketUpdates)
 
 **SQL file:** ticket_updates_analysis.sql
 
-This analysis examines how often tickets are updated and how update activity changes over time.
+**My Thinking:**
 
-**Key findings:**
+I explored the ticket updates table to understand how tickets progress operationally. I began by identifying the most frequent update actions, then examined update volume over time, and finally checked whether update behavior changed year by year.
 
-- 1,000 ticket creation events
+**My Findings:**
 
-- 405 agent responses
+- Updates fall into three actions: ticket creation, agent response, and ticket closure
+- Tickets created are (1,000), agent responses (405), with far fewer closures (201)
+- Yearly update volume is relatively stable from 2022 to 2025
+- Across all years, the same update pattern repeats: many tickets created, fewer agent responses, and even fewer closures
 
-- 201 resolution updates
+**Insights:**
 
-- Update activity remains relatively consistent across years (2022–2025)
+- Ticket handling follows a consistent operational pattern over time
+- The gap between tickets created and tickets closed aligns with the longer resolution times observed in the ticket log analysis
+- Update activity reflects progressive ticket handling, not immediate resolution
 
-**Insight:**
-There is a clear drop-off between ticket creation, agent engagement, and final resolution.
-This suggests that many tickets enter the system but do not complete the full lifecycle efficiently.
+**Interpretation:**  
 
-The consistency across years indicates this is a structural pattern, not a one-time fluctuation.
+The steep drop from tickets created to tickets responded to and closed suggests
+potential inefficiencies in ticket handling capacity or workflow execution.
 
-## 3️. Ticket Tag Usage & Coverage
 
-SQL file: ticket_tags_analysis.sql
 
-This section explores how tags are used and how broadly they affect tickets.
+## 4. Agent Performance & Workload Segmentation (Agent_Team_Performance)
 
-Key findings:
+**SQL file:** agent_performance_analysis.sql
 
-Tags such as shipping, urgent, refund, and bug-report appear most frequently
+**My Thinking:**
 
-Unique ticket counts per tag are lower than total tag counts
+I analyzed agent performance to understand how workload, resolution efficiency, and customer satisfaction interact. 
+My approach was structured:
+* Explored the table to understand available metrics and confirm data quality.
+* Established baseline statistics for tickets closed, resolution time, and CSAT.
+* Classified agents by workload: above average, average, and below average tickets closed.
+* Created performance quadrants combining workload (tickets closed) and efficiency (average resolution time):
+    High Workload & Fast Resolution
+    High Workload & Slow Resolution
+    Low Workload & Fast Resolution
+    Low Workload & Slow Resolution
+* Analyzed the distribution and contribution of each quadrant to overall ticket closure.
+* Drill-downs to identify top performers, risk groups, and underutilized agents.
 
-Insight:
-Tags are often applied multiple times to the same tickets, suggesting that issues evolve over time rather than being single-category problems.
+**My Findings:**
 
-This indicates that tags are actively used as part of ongoing ticket handling, not merely for initial classification.
+- Agent workload varies: some agents close many tickets (13), others very few (3).
+- High workload does not always equal fast resolution: some agents close many tickets slowly.
 
-Shipping- and urgency-related tags affect the largest number of tickets, highlighting recurring operational pressure points.
+**Quadrant distribution:**
 
-4️⃣ Agent Performance & Efficiency
+- High Workload & Slow Resolution: 10 agents, 93 tickets
+- High Workload & Fast Resolution: 8 agents, 64 tickets
+- Low Workload & Fast Resolution: 4 agents, 17 tickets
+- Low Workload & Slow Resolution: 3 agents, 17 tickets
+- Efficiency & quality (average resolution time and CSAT) differ by quadrant: top performers maintain fast resolution and high CSAT,
+  while some high-load agents are slower despite similar CSAT.
+- Drill-downs show specific agents in each quadrant, highlighting top performers, potential bottlenecks, and underutilized efficiency.
 
-SQL file: agent_performance_analysis.sql
+**Insights:**
 
-This analysis evaluates agent performance using workload, resolution efficiency, and customer satisfaction (CSAT).
+- Ticket handling capacity is unevenly distributed across agents.
+- High-workload, fast-resolution agents represent operational strength.
+- High-workload, slow-resolution agents may indicate process inefficiencies or capacity strain.
+- Low-workload, fast-resolution agents suggest untapped potential, while low-workload, slow-resolution agents contribute minimally.
 
-Approach:
-
-Establish baseline performance benchmarks
-
-Classify agent workload relative to team averages
-
-Segment agents into performance quadrants:
-
-High workload & fast resolution
-
-High workload & slow resolution
-
-Low workload & fast resolution
-
-Low workload & slow resolution
-
-Key findings:
-
-A relatively small group of agents handles the majority of tickets
-
-High-workload agents account for over 80% of total tickets resolved
-
-Resolution speed varies significantly within high-workload groups
-
-CSAT scores remain relatively stable across performance quadrants
-
-Insights:
-
-System throughput is heavily dependent on a subset of agents, creating concentration risk
-
-Workload distribution is uneven, with some efficient agents underutilized
-
-CSAT alone does not strongly differentiate agent efficiency, suggesting it may not be sensitive enough to operational bottlenecks
-
-These findings point to capacity planning and workload allocation opportunities, rather than individual performance issues.
-
-Overall Takeaways
-
-The system is effective at capturing demand but slower at completing work
-
-Priority and urgency labels do not consistently influence resolution speed
-
-Ticket handling shows clear funnel drop-offs from creation to closure
-
-Agent workload is unevenly distributed, creating efficiency and risk concerns
-
-Tags and updates provide meaningful behavioral signals when analyzed together
-
-Why This Project Matters
-
-This project reflects how I approach data analysis:
-
-start with structure
-
-ask focused questions
-
-build benchmarks before conclusions
-
-and reason carefully from what the data actually shows
-
-Rather than treating tables independently, I analyzed them as parts of a single operational system.
-
-The work demonstrates readiness for a junior analyst role, with a strong foundation for mentorship and growth into deeper analytical and business-focused problem solving.
+**Interpretation:**
+Agent performance patterns reveal capacity imbalances rather than uniform inefficiency. Supporting high-load agents and redistributing workload could improve overall ticket resolution throughput without adding staff.
