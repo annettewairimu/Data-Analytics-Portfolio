@@ -36,25 +36,25 @@ Both datasets required transformation and the creation of derived metrics before
 
 **Questions.**
 
-How is Excel demanded across experience levels?
+- How is Excel demanded across experience levels?
 
-How does experience influence skill requirements?
+- How does experience influence skill requirements?
 
-Are expert-level jobs more skill-heavy?
+- Are expert-level jobs more skill-heavy?
 
 ## Job Listings
 
 **Analyses Performed**
 
-Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
+- Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
 
-Created derived metrics: skill counts, skill flags
+- Created derived metrics: skill counts, skill flags
 
 Analysis examples:
 
-Jobs requiring Excel by experience level
+- Jobs requiring Excel by experience level
 
-Skill sets demanded at entry, intermediate, and expert levels
+- Skill sets demanded at entry, intermediate, and expert levels
 
 <img width="580" height="411" alt="image" src="https://github.com/user-attachments/assets/c6cfd9c0-d1f2-4efe-8029-260e149ef7f4" />
 
@@ -79,13 +79,14 @@ Housing prices correlate with the number of bedrooms, features, and estate locat
 ## Housing Listings
 
 **Questions.**
-How does the price change with bedrooms?
 
-How do prices vary across estates for similar units?
+- How does the price change with bedrooms?
 
-Do additional features increase price?
+- How do prices vary across estates for similar units?
 
-What bedroom configurations dominate the market?
+- Do additional features increase price?
+
+- What bedroom configurations dominate the market?
 
 
 **Derived features**
