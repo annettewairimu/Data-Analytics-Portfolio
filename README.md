@@ -19,6 +19,10 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 
   link 👉 [SQL + Power BI Analysis](03_sql-powerbi-analysis/)
 
+  - **SQL Data Exploration.**
+  The Project Demonstartes my ability to explore data stored in a relational database. The project is performed using SQL server.
+  Link 👉 
+
 ## Tools
 Excel • SQL • Power BI
 
