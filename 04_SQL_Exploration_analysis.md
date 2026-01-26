@@ -5,7 +5,7 @@
 ## Project Overview
 
 This project explores a **case and ticket management system** to understand how tickets are created, updated, categorized, and resolved,
-and how **agent performance influences resolution efficiency and customer satisfaction**.
+and how **agent performance influences resolution efficiency**.
 
 The goal of this is **structured data exploration**:
 asking the right questions, establishing benchmarks, identifying patterns, and translating SQL outputs into operational insights.
