@@ -31,21 +31,17 @@ The Performance Quadrant was calculated in SQL, reflecting the strategic underst
 
 - Created key measures for dynamic KPIs: Total Tickets, Avg Tickets per Agent, Avg Resolution Time, Total Agents
 
-- Structured the report for clarity, impact, and actionable insights
-
 ## Key Metrics
 
 The report highlights critical KPIs that management relies on:
 
-Total Agents
+- Total Agents
 
-Total Tickets Closed
+- Total Tickets Closed
 
-Average Tickets per Agent
+- Average Tickets per Agent
 
-Average Resolution Time
-
-These provide a clear, executive-level snapshot of team performance.
+- Average Resolution Time
 
 ## Visual Analysis
 #### 1. Agent Productivity vs Resolution Efficiency
