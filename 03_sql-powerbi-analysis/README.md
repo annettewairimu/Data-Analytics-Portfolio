@@ -5,6 +5,8 @@ This project visualizes customer service agent performance using productivity an
 
 The data was structured in SQL and visualized in Power BI to deliver a clear, interactive performance report.
 
+Output: 
+
 ## Dataset.
 
 The analysis uses an agent-level dataset with the following metrics:
