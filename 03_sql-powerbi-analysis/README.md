@@ -92,8 +92,6 @@ SQL: Data extraction, consolidation, and quadrant calculation
 
 Power BI: Data modeling, DAX measures, and interactive visualization
 
-This workflow reflects real-world analytical practices.
-
 **This project showcases my ability to:**
 
 Transform raw operational data into strategic insights
