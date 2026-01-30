@@ -27,7 +27,7 @@ The link below leads to my Google Drive, where you will find a folder containing
 1. Customer Service data (Only Agent and Team Performance was used here)
 2. SQL Power BI report (showing KPIs and charts)
 
-   Link 🔗 [https://drive.google.com/drive/folders/1iQGRdqae2dy-rh1cUWNqd5nLfuXqdlpC?usp=drive_link]
+   Link 🔗 [Google Drive Folder](https://drive.google.com/drive/folders/1iQGRdqae2dy-rh1cUWNqd5nLfuXqdlpC?usp=drive_link)
 
 ## Data Preparation & Modeling
 
@@ -58,28 +58,15 @@ A scatter plot compares Tickets Closed against Average Resolution Time, with age
 
 This visual immediately highlights:
 
-high workload, fast resolution
-
-high workload, slow resolution
-
-low workload but fast resolution
-
-low workload, slow resolution
+Performance Quadrant appearance.
 
 #### 2. Agent Distribution by Performance Quadrant
 
 A bar chart shows the number of agents in each performance quadrant, giving a concise view of team composition and operational strengths/weaknesses.
 
 This visual immediately highlights:
-(agent count)
-high workload, fast resolution
 
-high workload, slow resolution
-
-low workload but fast resolution
-
-low workload, slow resolution
-
+Performance Quadrant agent count
 
 ## Key Insights
 
@@ -98,10 +85,10 @@ Power BI: Data modeling, DAX measures, and interactive visualization
 
 **This project showcases my ability to:**
 
-Transform raw operational data into strategic insights
+- Transform raw operational data into strategic insights
 
-Apply analytical reasoning to highlight meaningful patterns
+- Apply analytical reasoning to highlight meaningful patterns
 
-Build clean, purposeful Power BI reports
+- Build clean, purposeful Power BI reports
 
-Communicate results in a professional, actionable format
+- Communicate results in an actionable format
