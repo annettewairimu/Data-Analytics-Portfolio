@@ -5,21 +5,19 @@ This project visualizes customer service agent performance using productivity an
 
 The data was structured in SQL and visualized in Power BI to deliver a clear, interactive performance report.
 
-Output: 
-
 ## Dataset.
 
 The analysis uses an agent-level dataset with the following metrics:
 
-AgentName
+- AgentName
 
-Tickets Closed — measure of productivity
+- Tickets Closed — measure of productivity
 
-Average Resolution Time (Hours) — measure of efficiency
+- Average Resolution Time (Hours) — measure of efficiency
 
-Average Customer Satisfaction Score (CSAT)
+- Average Customer Satisfaction Score (CSAT)
 
-Performance Quadrant — categorizing agents based on productivity × efficiency
+- Performance Quadrant — categorizing agents based on productivity × efficiency
 
 The Performance Quadrant was calculated in SQL, reflecting the strategic understanding of who drives performance and who needs support.
 
