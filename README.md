@@ -26,7 +26,7 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
   
    The Project Demonstrates my ability to explore data stored in a relational database. The project is performed using SQL Server.
    
-    The dataset used in this project is identical to the one used in the SQL + Power BI Project.
+   The dataset used in this project is identical to the one used in the SQL + Power BI Project.
   
   Link 👉 [SQL Data Exploration](04_SQL_Exploration_analysis.md)
 
