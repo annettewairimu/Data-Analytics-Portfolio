@@ -49,6 +49,13 @@ DetailID, TicketID, UpdateTimestamp, UpdateText
 **Columns:**
 AgentID, AgentName, TicketsClosed, AverageResolutionTimeHours, Average_CSAT_Score
 
+The Link below leads to my Google Drive, containing:
+
+1. Customer Service Data (This data was used in the project)
+2. The SQL files (for each table Explored).
+
+   Link 🔗 [Google Drive Folder](https://drive.google.com/drive/folders/1iQGRdqae2dy-rh1cUWNqd5nLfuXqdlpC?usp=drive_link)
+
 ## Analysis Breakdown
 
 ## 1. Ticket Lifecycle & Operations (Ticketlogs)
