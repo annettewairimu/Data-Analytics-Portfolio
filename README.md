@@ -12,7 +12,7 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 **2:** **Excel Analysis Project**  
   Shows my ability to understand data, read numbers, draw insights from output, and interpret Insights.
 
-  link 👉 [Excel Analysis](02_excel-analysis/)
+  link 👉 [Excel Analysis](02_excel-analysis)
 
 **3:** **SQL + Power BI Project**
   
