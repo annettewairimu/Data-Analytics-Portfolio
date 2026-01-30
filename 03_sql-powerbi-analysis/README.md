@@ -23,6 +23,12 @@ Performance Quadrant — categorizing agents based on productivity × efficiency
 
 The Performance Quadrant was calculated in SQL, reflecting the strategic understanding of who drives performance and who needs support.
 
+The link below leads to my Google Drive, where you will find a folder containing;
+1. Customer Service data (Only Agent and Team Performance was used here)
+2. SQL Power BI report (showing KPIs and charts)
+
+   Link 🔗 [https://drive.google.com/drive/folders/1iQGRdqae2dy-rh1cUWNqd5nLfuXqdlpC?usp=drive_link]
+
 ## Data Preparation & Modeling
 
 - Extracted and consolidated agent performance data using SQL
