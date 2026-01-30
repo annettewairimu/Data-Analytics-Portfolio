@@ -17,12 +17,14 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
 **3:** **SQL + Power BI Project**
   
   Demonstrates an end-to-end analytics workflow, from data extraction using SQL to visualization in Power BI.
+  The dataset used in this project is identical to the one used in the SQL Exploration project.
 
   link 👉 [SQL + Power BI Analysis](03_sql-powerbi-analysis/)
 
 **4:** **SQL Data Exploration.**
   
    The Project Demonstrates my ability to explore data stored in a relational database. The project is performed using SQL Server.
+    The dataset used in this project is identical to the one used in the SQL + Power BI Project.
   
   Link 👉 [SQL Data Exploration](04_SQL_Exploration_analysis.md)
 
