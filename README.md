@@ -20,7 +20,7 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
   
   The dataset used in this project is identical to the one used in the SQL Exploration project.
 
-  link 👉 [SQL + Power BI Analysis](03_sql-powerbi-analysis/)
+  link 👉 [SQL + Power BI Analysis](03_sql-powerbi-analysis)
 
 **4:** **SQL Data Exploration.**
   
