@@ -10,7 +10,7 @@ This portfolio demonstrates my approach to data analysis, starting with analytic
   link 👉 [Reasoning Through Data](01_reasoning-through-data/)
 
 **2:** **Excel Analysis Project**  
-  Shows my ability to clean, summarize insights, and build clear dashboards using Excel.
+  Shows my ability to understand data, read numbers, draw insights from output, and interpret Insights.
 
   link 👉 [Excel Analysis](02_excel-analysis/)
 
