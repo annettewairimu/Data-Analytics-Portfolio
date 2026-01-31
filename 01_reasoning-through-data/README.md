@@ -44,6 +44,8 @@ Both datasets required transformation and the creation of derived metrics before
 
 **Analyses Performed**
 
+Dataset transformation:
+
 - Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
 
 - Created derived metrics: skill counts, skill flags
