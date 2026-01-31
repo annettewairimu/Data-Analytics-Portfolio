@@ -71,8 +71,6 @@ Excel proficiency is almost universal for freelance roles at all experience leve
 
 Intermediate/expert jobs require a mix of BI, programming, statistics, and domain knowledge.
 
-Housing prices correlate with the number of bedrooms, features, and estate location.
-
 
 ## Housing Listings
 
@@ -114,6 +112,8 @@ Bedroom Distribution: Mid-sized units (2–3 bedrooms) dominate; studios and 5-b
 **Key Takeaways**
 
 Price and features strongly influence value; 2-3 bedroom unit form the market core.
+
+Housing prices correlate with the number of bedrooms, features, and estate location.
 
 ## Tools Used
 
