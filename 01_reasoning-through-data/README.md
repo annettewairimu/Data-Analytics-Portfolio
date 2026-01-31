@@ -42,8 +42,6 @@ Both datasets required transformation and the creation of derived metrics before
 
 - Are expert-level jobs more skill-heavy?
 
-## Job Listings
-
 **Analyses Performed**
 
 - Parsed text fields into skill categories: Excel, BI/Visualization, Programming, Statistics/Data Analysis, Database, Domain Knowledge
